@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 const data1 = [
     {
       "age": 3,
@@ -32,4 +34,22 @@ const data1 = [
       "email": "j.dink@erw.com",
     }
   ];
-  
+
+// Task 1
+
+const index = _.findIndex(data1, { age : 23 });
+
+// Task 2
+
+const arrays = _.concat(data1, [data2])
+
+// Task 3
+
+const a = {
+  "age": 40,
+  "name": "James Dinh",
+  "email": "j.dink@erw.com",
+}
+
+const newArray = _.omit(a, ("age"))
+console.log(newArray);
